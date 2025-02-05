@@ -1,0 +1,47 @@
+/* 1024px < */
+
+.tittle {
+    font-size:clamp(5rem,15vw,20rem)
+}
+
+.main {
+    padding: 3rem 15rem;
+    font-size:clamp(16px,2rem,26px);
+    height: 100%;
+}
+
+.entrada {
+    font-size:clamp(16px,3rem,36px);
+}
+
+.text-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-left: 3,4vw;
+    text-indent: 5vw;
+}
+
+.me.pic {
+    align-items: center;
+}
+
+.n {
+    column-gap: 33vw;
+    font-size:clamp(12px,1rem,24px);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    .card {
+      width: 33%;
+      padding: 2rem;
+    }
+}
+
+.contact p {
+    font-size:clamp(20px,10rem,60px);
+}

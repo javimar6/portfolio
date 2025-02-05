@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Cirka";
+  src: url("../fonts/PPCirka-Variable.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue";
+  src: url("../fonts/PPNeueMachina-PlainLightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #1e1e1f;
+  color: #d0d0d0;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  font-size: 1rem;
+  line-height: 1.2;
+  display: block;
+
+  color: #1e1e1f;
+  background-color: #d0d0d0;
+}
+
+.m {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.all_ {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+/* MENU */
+
+.n {
+  z-index: 50;
+  font-size: 14px;
+  position: fixed;
+  top: 2.22vh;
+  left: 2vw;
+  right: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.n a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.n span {
+  position: relative;
+  color: currentColor;
+  -webkit-text-stroke: none;
+
+  &:hover {
+    -webkit-text-stroke: 0.8em #1e1e1f;
+  }
+}
+
+/* ME */
+
+.me {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.me .pic {
+  position: relative;
+  bottom: 5.56vh;
+  aspect-ratio: 3/4;
+}
+
+.tittle {
+  position: absolute;
+  left: 1.39vw;
+  right: 1.39vw;
+  bottom: -2vw;
+  overflow: hidden;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  text-align: center;
+  font-size: 15vw;
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+}
+
+.javi {
+  font-family: "Cirka", Arial, Helvetica, sans-serif;
+}
+
+.mar {
+  font-family: "Neue", Arial, Helvetica, sans-serif;
+}
+
+/* TEXTO */
+
+.main {
+  margin-inline: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 3rem;
+
+  position: relative;
+  width: 100vw;
+  height: 75%;
+}
+
+.entrada {
+  width: 100%;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+
+  /* */
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  text-align: center;
+}
+
+.entrada strong {
+  font-weight: normal;
+
+  border: 2px solid currentColor;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+  &:hover {
+    border: 2px solid currentColor;
+    border-radius: 80% 20% 20% 80% / 20% 20% 80% 80%;
+  }
+}
+
+.text-content {
+  padding-top: 5rem;
+  text-indent: 10vw;
+  text-wrap: balance;
+}
+
+.text-content p {
+  margin-bottom: 1.4rem;
+}
+
+/* OBRA */
+
+.obra {
+  text-align: center;
+  letter-spacing: -0.06em;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  padding: 3rem 3rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin-inline: auto;
+  padding: 0 2rem 4rem;
+
+  .card {
+    margin-bottom: 2rem;
+  }
+
+  ._title {
+    margin: 0;
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 3/4;
+
+    object-fit: cover;
+    object-position: center top;
+  }
+}
+
+/* CONTACT */
+
+.contact {
+  width: 100%;
+  padding: 3.2vw;
+  background: linear-gradient(190deg, #d0bba6, #621f0c 70%);
+}
+
+.contact div {
+  color: currentColor;
+  font-size: 7vw;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-bottom: 6.8vw;
+}
+
+.contact a {
+  color: currentColor;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.contact .insta {
+  color: #d0bba6;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+
+  border: 2px solid #d0bba6;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+  &:hover {
+    border: 2px solid currentColor;
+    border-radius: 80% 20% 20% 80% / 20% 20% 80% 80%;
+  }
+}
+
+.contact span {
+  padding-top: 5rem;
+}
